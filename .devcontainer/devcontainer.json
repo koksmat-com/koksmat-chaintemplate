@@ -1,11 +1,12 @@
 {
 	"name": "Koksmat",
 	"image": "ghcr.io/koksmat-com/koksmat:v1.1.1",
-	"features": {
+	
+		
+		"containerEnv": {
+			"KITCHENROOT": "${localEnv:PWD}/kitchens/",
+            "DOCUSAURUS": "${localEnv:PWD}servers/docs/"
 
-	},
-		"forwardPorts": [
-			3010
-		],
-
+		},
+		"postCreateCommand": "cd /usr/src/app/apps/www  &&  npm run start"
 	}
