@@ -1,0 +1,11 @@
+{
+	"name": "Koksmat",
+	"image": "ghcr.io/koksmat-com/koksmat:v1.1.1",
+	"features": {
+
+	},
+		"forwardPorts": [
+			3010
+		],
+
+	}
