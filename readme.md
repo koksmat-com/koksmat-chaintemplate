@@ -1,6 +1,6 @@
 ---
 title: 365admin Version 1
-description: Describe the main purpose of this kitchen
+description: Version 1 of the "Workspace" template to be used for 365admin
 ---
 
 # 365admin Version 1
@@ -15,10 +15,15 @@ The folder structure is as follows:
 
 ```
     "root"
-    ├── readme.md
-    ├── servers
-    │   ├── docs
-    │   ├── studio
-    ├── kitchens
+    ├── .koksmat
+    │   ├── servers
+    │   ├── sessions
+    │   ├── workdir
+    ├── workspaces
+    │   ├── .koksmat
+    │   │   ├── tenants
+    │   │   |  ├── <tenant-name>
+    │   │   |  |  ├── <connection-A>
+    │   │   |  |  ├── <connection-B>
     
 ```
