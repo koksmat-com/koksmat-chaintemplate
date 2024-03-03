@@ -3,12 +3,9 @@ title: Chain Template
 description: Version 1 of the "Chain" template to be used for 365admin
 ---
 
-# 365admin Chain Template
+# Koksmat Chain Template
 
-## Purpose
-
-This workspace is designed to host other workspaces and act a the source repo for a Code Space. Within this workspace, 
-you define which other workspaces you want to include. The combined workspaces is called a "Chain of Workspaces".
+This is the first version of the "Chain" template to be used for 365admin. The purpose of this template is to provide an easy way to bootstrap a new workspace that that can be used to host a chain of workspaces.
 
 
 
@@ -18,17 +15,18 @@ The folder structure is as follows:
 
 ```
     "root"
-    ├── .koksmat
-    │   ├── app
-    │   ├── logs
-    │   ├── sessions
-    │   ├── web
-    │   ├── workdir
-    ├── workspaces
-    │   ├── .koksmat
+    ├── workspaces                        Root of workspaces
+    │   ├── .koksmat                      Root of connections
     │   │   ├── tenants
     │   │   |  ├── <tenant-name>
     │   │   |  |  ├── <connection-A>
-    │   │   |  |  ├── <connection-B>
+    │   │   |  |  ├── <connection-B>   
+    │   ├── timesheets-registration       One workspace
+    │   ├── timesheets-approval           Another workspace
+    │   │   ├── .koksmat                  koksmat app space
+    │   │   │   ├── app
+    │   │   │   ├── sessions
+    │   │   │   ├── web
+    │   │   │   ├── workdir    
     
 ```
